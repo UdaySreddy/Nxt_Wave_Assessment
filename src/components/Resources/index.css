@@ -19,7 +19,7 @@
 .resourcesButton {
   background: #0b69ff;
   border: 1px solid #d7dfe9;
-  font-family: "HK Grotesk";
+  font-family: 'HK Grotesk';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -31,7 +31,7 @@
 .otherButton {
   background: rgba(215, 223, 233, 0.24);
   border: 1px solid #d7dfe9;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -66,6 +66,6 @@
   position: absolute;
   left: 10.28%;
   margin-left: 0px;
-  top: 30.59%;
+  top: 32.59%;
   background-color: #f5f5f5;
 }
