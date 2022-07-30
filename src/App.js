@@ -1,14 +1,13 @@
-import "./App.css";
-import Header1 from "./components/Header1";
-import Resources from "./components/Resources";
+import './App.css'
+import {BrowserRouter, Route} from 'react-router-dom'
+import Home from './components/Home'
 
 function App() {
   return (
-    <>
-      <Header1 />
-      <Resources />
-    </>
-  );
+    <BrowserRouter>
+      <Route exact path="/" component={Home} />
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
