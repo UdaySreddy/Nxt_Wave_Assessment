@@ -27,8 +27,7 @@ class Resources extends Component {
           />
           <input className="searchInput" type="search" placeholder="Search" />
         </div>
-
-        <div>
+        <div className="elementsContainer">
           <Elements />
         </div>
       </div>
