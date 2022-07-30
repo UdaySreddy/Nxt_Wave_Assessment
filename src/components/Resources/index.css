@@ -2,59 +2,62 @@
   width: 1440px;
   height: 1024px;
 
-  background: #fbfbfb;
+  background: #f5f5f5;
 }
-
-.headBackground {
-  background: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.tabNames {
   position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 92.97%;
-  height: 72px;
-}
-.logoNxtwave {
-  width: 82px;
+  left: 29.17%;
+  right: 29.17%;
+  top: 15.52%;
+  bottom: 84.57%;
+  width: 600px;
   height: 40px;
-  position: absolute;
-  left: 3.33%;
-  right: 90.97%;
-  top: 1.56%;
-  bottom: 94.53%;
-  margin-top: 16px;
-}
-.addButton {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  padding: 8px 20px;
-  gap: 8px;
+}
 
-  left: 86.88%;
-  right: 6.67%;
-  top: 1.37%;
-  bottom: 94.73%;
-  margin-top: 14px;
-  margin-right: 96px;
-  margin-left: 1251px;
+.resourcesButton {
+  background: #0b69ff;
+  border: 1px solid #d7dfe9;
+  font-family: "HK Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  width: 200px;
+  height: 40px;
 }
-.userImage {
-  border-radius: 50px;
+.otherButton {
+  background: rgba(215, 223, 233, 0.24);
+  border: 1px solid #d7dfe9;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #171f46;
+  width: 200px;
+  height: 40px;
+}
+
+.searchBox {
   position: absolute;
-  left: 100%;
-  right: -100%;
-  top: 0%;
-  bottom: 0%;
-  margin-top: 19px;
-  margin-right: 40px;
-  margin-left: 20px;
+  left: 10.35%;
+  right: 44.65%;
+  top: 25.55%;
+  height: 35px;
+  width: 648px;
+  border: 1px solid #d7dfe9;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 3px;
 }
-.addButton1 {
-  background-color: #ffffff;
-  border: 0px;
+.searchInput {
+  margin-left: 15px;
+  border-style: hidden;
+  background: #f5f5f5;
 }
