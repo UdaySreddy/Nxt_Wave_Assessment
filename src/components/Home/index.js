@@ -9,7 +9,7 @@ import './index.css'
 class Home extends Component {
   render() {
     return (
-      <Link to="/">
+      <Link to="/home">
         <Header1 />
         <Resources />
       </Link>

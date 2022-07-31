@@ -1,6 +1,8 @@
 import {Component} from 'react'
 
 import Elements from '../Elements'
+import {ToastContainer, toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 import './index.css'
 
@@ -16,6 +18,7 @@ class Resources extends Component {
       'https://media-content.ccbp.in/website/react-assignment/resources.json',
     )
     const data = await response.json()
+    toast.success('fetch sucess')
     const fetchedData = data.map(each => ({
       category: each.category,
       description: each.description,
@@ -32,16 +35,19 @@ class Resources extends Component {
     const {initialList} = this.state
     const requestList = initialList.filter(each => each.tag === 'request')
     this.setState({resourceList: requestList})
+    toast.success('filter1 sucess')
   }
   filter2 = () => {
     const {initialList} = this.state
     const requestList = initialList.filter(each => each.tag === 'user')
     this.setState({resourceList: requestList})
+    toast.success('filter2 sucess')
   }
 
   filter3 = () => {
     const {initialList} = this.state
     this.setState({resourceList: initialList})
+    toast.success('filter3 sucess')
   }
 
   filterList = event => {
@@ -50,6 +56,7 @@ class Resources extends Component {
     console.log(x)
     if (x === '') {
       this.setState({resourceList: initialList})
+      toast.warning('enter text in search bar')
     } else {
       const filterdSearch = resourceList.filter(each =>
         each.title.toUpperCase().includes(x),
@@ -57,6 +64,7 @@ class Resources extends Component {
       this.setState({
         resourceList: filterdSearch,
       })
+      toast.success('search sucess')
     }
   }
 
@@ -99,6 +107,7 @@ class Resources extends Component {
             <Elements resourseData={each} key={each.id} />
           ))}
         </ul>
+        <ToastContainer />
       </div>
     )
   }

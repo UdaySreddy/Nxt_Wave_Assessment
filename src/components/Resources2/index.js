@@ -2,6 +2,9 @@ import {Component} from 'react'
 import {Link} from 'react-router-dom'
 import {v4} from 'uuid'
 
+import {ToastContainer, toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 import './index.css'
 
 class Resources2 extends Component {
@@ -42,6 +45,10 @@ class Resources2 extends Component {
       descriptionInput,
     } = this.state
 
+    if (titleInput === '') {
+      toast.warning('you must enter name')
+    }
+
     const newObject = {
       title: titleInput,
       link: linkInput,
@@ -63,8 +70,10 @@ class Resources2 extends Component {
 
   render() {
     return (
+       
       <form className="pageBackground" onClick={this.prevent}>
-        <Link to="/">
+         toast.info("you are redirected")
+        <Link to="/home">
           <button type="button" className="usersButton">
             <img
               src="https://res.cloudinary.com/dyei9ewrb/image/upload/v1659249079/assignment/breadcrumbs_h5fdtt.png"
@@ -106,6 +115,7 @@ class Resources2 extends Component {
             </button>
           </div>
         </form>
+        <ToastContainer />
       </form>
     )
   }

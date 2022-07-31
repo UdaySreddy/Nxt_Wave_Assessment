@@ -1,8 +1,14 @@
 import {Component} from 'react'
 import {Link} from 'react-router-dom'
 import './index.css'
+import {ToastContainer, toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 class Header1 extends Component {
+  redirected = () => {
+    toast.info('you are redirected')
+  }
+
   render() {
     return (
       <div className="headBackground">
@@ -12,8 +18,12 @@ class Header1 extends Component {
           alt="logo"
         />
         <div className="innerContainer">
-          <Link to="addresource">
-            <button className="addButton1" type="button">
+          <Link to="/addresource">
+            <button
+              className="addButton1"
+              type="button"
+              onClick={this.redirected}
+            >
               <img
                 className="addButton"
                 src="https://res.cloudinary.com/dyei9ewrb/image/upload/v1659163432/assignment/Default_rp2eag.png"
@@ -27,6 +37,7 @@ class Header1 extends Component {
             alt="userpic"
           />
         </div>
+        <ToastContainer />
       </div>
     )
   }
