@@ -1,5 +1,6 @@
-import { Component } from "react";
-import "./index.css";
+import {Component} from 'react'
+import {Link} from 'react-router-dom'
+import './index.css'
 
 class Header1 extends Component {
   render() {
@@ -11,13 +12,15 @@ class Header1 extends Component {
           alt="logo"
         />
         <div className="innerContainer">
-          <button className="addButton1">
-            <img
-              className="addButton"
-              src="https://res.cloudinary.com/dyei9ewrb/image/upload/v1659163432/assignment/Default_rp2eag.png"
-              alt="add"
-            />
-          </button>
+          <Link to="addresource">
+            <button className="addButton1" type="button">
+              <img
+                className="addButton"
+                src="https://res.cloudinary.com/dyei9ewrb/image/upload/v1659163432/assignment/Default_rp2eag.png"
+                alt="add"
+              />
+            </button>
+          </Link>
           <img
             className="userImage"
             src="https://res.cloudinary.com/dyei9ewrb/image/upload/v1659164501/assignment/new_image_1x_p8axkh.png"
@@ -25,8 +28,8 @@ class Header1 extends Component {
           />
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Header1;
+export default Header1

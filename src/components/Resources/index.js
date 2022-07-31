@@ -1,8 +1,8 @@
-import { Component } from "react";
+import {Component} from 'react'
 
-import Elements from "../Elements";
+import Elements from '../Elements'
 
-import "./index.css";
+import './index.css'
 
 class Resources extends Component {
   render() {
@@ -31,8 +31,8 @@ class Resources extends Component {
           <Elements />
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Resources;
+export default Resources

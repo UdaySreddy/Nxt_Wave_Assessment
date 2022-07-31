@@ -1,5 +1,5 @@
-import { Component } from "react";
-import "./index.css";
+import {Component} from 'react'
+import './index.css'
 
 class Elements extends Component {
   render() {
@@ -90,8 +90,8 @@ class Elements extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Elements;
+export default Elements
