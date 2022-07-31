@@ -1,8 +1,7 @@
 .pageBackground {
   width: 1440px;
-  height: 1024px;
-
-  background: #f5f5f5;
+  background-color: #f5f5f5;
+  background-size: cover;
 }
 .tabNames {
   position: absolute;
@@ -41,6 +40,10 @@
   height: 40px;
 }
 
+.searchImage1 {
+  background-color: #ffffff;
+}
+
 .searchBox {
   position: absolute;
   left: 10.35%;
@@ -59,13 +62,18 @@
 .searchInput {
   margin-left: 15px;
   border-style: hidden;
-  background: #f5f5f5;
+  height: 34px;
+  width: 630px;
 }
 
 .elementsContainer {
   position: absolute;
-  left: 10.28%;
+  left: 7.28%;
   margin-left: 0px;
   top: 32.59%;
   background-color: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
 }
