@@ -53,5 +53,8 @@
   bottom: 94.73%;
 }
 .addButton1 {
-  margin: 5px;
+  margin: 8px;
+  margin-top: 10px;
+  border: 0px;
+  background-color: #ffffff;
 }
